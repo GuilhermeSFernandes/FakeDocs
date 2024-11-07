@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Centralizar o contêiner de edição */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+/* Contêiner principal */
+.edit-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Estilo do formulário */
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Estilo dos botões */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.btn-save, a.btn-cancel {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.btn-save {
+  background-color: #4CAF50;
+}
+
+a.btn-cancel {
+  background-color: #f44336;
+}
+
+button.btn-save:hover {
+  background-color: #45a049;
+}
+
+a.btn-cancel:hover {
+  background-color: #d32f2f;
+}
+/* Estilo para o campo de conteúdo (textarea) */
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
